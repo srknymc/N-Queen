@@ -9,19 +9,15 @@ namespace N_Queen.Models
     static class AppHelper
     {
         public static Random rndGenerator = new Random();
-        public static bool IsDone()
-        {
-            return false;
-        }
 
-        public static int[] GenerateBoard(int n)
+        public static int[] GenerateBoard(int n) //generate random board with given n value
         {
             int[] board = new int[n];
             board = RandomizeBoard(board);
             return board;
         }
 
-        public static int CalculateHeuristic(int[] board)
+        public static int CalculateHeuristic(int[] board) //calculate cost. check row and diagonal
         {
             int h = 0;
 
@@ -42,7 +38,7 @@ namespace N_Queen.Models
             return h;
         }
 
-        public static int[] RandomizeBoard(int[] board)
+        public static int[] RandomizeBoard(int[] board) //randomize board
         {
             for (int i = 0; i < board.Length; ++i)
             {

@@ -38,6 +38,8 @@ namespace N_Queen
             pnlGroupSA.Height = 25;
            // CreateBoard();
         }
+        
+        //Adding GUI handlers
         private void AddHandlers()
         {
             btnHillCilmbing.Click += BtnHillCilmbing_Click;
@@ -59,7 +61,7 @@ namespace N_Queen
 
         private void BtnRunSA_Click(object sender, EventArgs e)
         {
-            //TestSimulatedAnnealing();
+            //TestSimulatedAnnealing(); //test unit
             CreateBoard();
 
             (int[] result,int iteration,int cost)= Algorithms.SimulatedAnnealing(N, Convert.ToInt32(txtMaxIterationSA.Text), Convert.ToDouble(txtTempreture.Text), Convert.ToDouble(txtCoolingFactor.Text));
@@ -79,7 +81,7 @@ namespace N_Queen
 
         private void BtnRunLBS_Click(object sender, EventArgs e)
         {
-            //TestLocalBeamSearch();
+            //TestLocalBeamSearch(); //test unit
             CreateBoard();
 
             (int[] result,int iteration,int cost) = Algorithms.LocalBeamSearch(N, Convert.ToInt32(txtMaxIterationLBS.Text), Convert.ToInt32(txtStatesLBS.Text));
@@ -97,7 +99,7 @@ namespace N_Queen
         }
         private void BtnRunHC_Click(object sender, EventArgs e)
         {
-            //TestHillClimbing();
+            //TestHillClimbing(); //test unit
             CreateBoard();
             (int[] result,int iteration,int cost) = Algorithms.HillClimbing(N, Convert.ToInt32(txtMaxIterationHC.Text));
             if (cost == 0)
@@ -113,6 +115,7 @@ namespace N_Queen
             pnlBoard.Invalidate();
         }
 
+        //Can test all algorithms with these 3 function with given parameters it will return avg iteration score and fail count
         private void TestHillClimbing()
         {
             int sum = 0;
@@ -171,7 +174,7 @@ namespace N_Queen
             MessageBox.Show((sum / 100).ToString() + "," + failed.ToString());
         }
 
-       
+       //Setting result to GUI
         public static void SetArray2Map(int[] result)
         {
             boardData.Values.ToList().ForEach(x => { x.IsQueen = false; });
@@ -183,6 +186,7 @@ namespace N_Queen
 
         }
 
+        //BOARD paint function with custom controls
         private void PnlBoard_Paint(object sender, PaintEventArgs e)
         {
             if (N != -1)
@@ -261,6 +265,7 @@ namespace N_Queen
                 pnlGroupHC.Height = 25;
             }
         }
+        //Creating board values for GUI
         private void CreateBoard()
         {
             N = Convert.ToInt32(txtNumberOfQueen.Text);
