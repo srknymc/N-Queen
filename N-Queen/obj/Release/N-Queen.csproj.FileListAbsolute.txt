@@ -1,0 +1,10 @@
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\bin\Release\N-Queen.exe.config
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\bin\Release\N-Queen.exe
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\bin\Release\N-Queen.pdb
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N-Queen.csprojAssemblyReference.cache
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N_Queen.frmMain.resources
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N_Queen.Properties.Resources.resources
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N-Queen.csproj.GenerateResource.cache
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N-Queen.csproj.CoreCompileInputs.cache
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N-Queen.exe
+C:\Users\Serkan\Desktop\N-Queen\N-Queen\N-Queen\obj\Release\N-Queen.pdb
